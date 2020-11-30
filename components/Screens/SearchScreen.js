@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-native";
 
 import styled from "styled-components/native";
 
@@ -23,12 +22,11 @@ const HeaderTwo = styled(DefaultText)`
   font-weight: 500;
   letter-spacing: 0.25px;
 `;
-export default function HomeScreen({ navigation }) {
+
+export default function SearchScreen() {
   return (
     <DefaultScreen>
-      <Button title="Search" onPress={() => navigation.navigate("Search")} />
-
-      <HeaderTwo>Home</HeaderTwo>
+      <HeaderTwo>Search</HeaderTwo>
     </DefaultScreen>
   );
 }

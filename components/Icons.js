@@ -39,8 +39,16 @@ export function HomeIcon() {
   return <IconDefault source={require("../assets/Home.svg")} />;
 }
 
+export function HomeIcon_Active() {
+  return <IconDefault source={require("../assets/Home_Active.svg")} />;
+}
+
 export function LikeIcon() {
   return <IconDefault source={require("../assets/Like.svg")} />;
+}
+
+export function LikeIcon_Active() {
+  return <IconDefault source={require("../assets/Like_Active.svg")} />;
 }
 
 export function IndicatorIcon() {
@@ -55,12 +63,20 @@ export function NotificationIcon() {
   return <IconDefault source={require("../assets/Notification.svg")} />;
 }
 
+export function NotificationIcon_Active() {
+  return <IconDefault source={require("../assets/Notification_Active.svg")} />;
+}
+
 export function OptionsIcon() {
   return <IconDefault source={require("../assets/Options.svg")} />;
 }
 
 export function SearchIcon() {
   return <IconDefault source={require("../assets/Search.svg")} />;
+}
+
+export function SearchIcon_Active() {
+  return <IconDefault source={require("../assets/Search_Active.svg")} />;
 }
 
 export function Wordmark() {
