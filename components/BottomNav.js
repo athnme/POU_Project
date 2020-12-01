@@ -1,13 +1,6 @@
 import React from "react";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-
-import LikedScreen from "./Screens/LikedScreen";
-import CreateScreen from "./Screens/CreateScreen";
-import NotificationsScreen from "./Screens/NotificationsScreen";
-import YourProfileScreen from "./Screens/YourProfileScreen";
-import SearchScreen from "./Screens/SearchScreen";
 
 import HomeStack from "./Stacks/HomeStack";
 import LikedStack from "./Stacks/LikedStack";
@@ -22,17 +15,12 @@ import {
   LikeIcon_Active,
   NotificationIcon,
   NotificationIcon_Active,
-  AddIcon,
-  Wordmark,
   SearchIcon,
   SearchIcon_Active,
 } from "./Icons";
 
 import { ProfilePicS, ProfilePicS_Active } from "./ProfilePics";
 
-import { AddButton, SearchButton } from "./Buttons";
-
-const Stack = createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
 //
