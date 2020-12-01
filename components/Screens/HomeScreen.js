@@ -25,6 +25,8 @@ const HeaderTwo = styled(DefaultText)`
 export default function HomeScreen({ navigation }) {
   return (
     <DefaultScreen>
+      <Button title="Search" onPress={() => navigation.navigate("Search")} />
+
       <HeaderTwo>Home</HeaderTwo>
     </DefaultScreen>
   );
