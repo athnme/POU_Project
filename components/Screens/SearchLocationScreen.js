@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components/native";
 
 const DefaultScreen = styled.View`
@@ -23,10 +22,10 @@ const HeaderTwo = styled(DefaultText)`
   letter-spacing: 0.25px;
 `;
 
-export default function SearchScreen() {
+export default function SearchLocationScreen() {
   return (
     <DefaultScreen>
-      <HeaderTwo>Search</HeaderTwo>
+      <HeaderTwo>Search Location</HeaderTwo>
     </DefaultScreen>
   );
 }

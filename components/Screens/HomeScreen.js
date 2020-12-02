@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components/native";
 
 const DefaultScreen = styled.View`
@@ -25,8 +24,6 @@ const HeaderTwo = styled(DefaultText)`
 export default function HomeScreen({ navigation }) {
   return (
     <DefaultScreen>
-      <Button title="Search" onPress={() => navigation.navigate("Search")} />
-
       <HeaderTwo>Home</HeaderTwo>
     </DefaultScreen>
   );

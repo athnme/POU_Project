@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import SearchScreen from "../Screens/SearchScreen";
+import SearchLevelOneStack from "./SearchLevelOneStack";
 
 const Stack = createStackNavigator();
 
@@ -10,7 +10,7 @@ export default function SearchStack() {
     <Stack.Navigator>
       <Stack.Screen
         name="Search"
-        component={SearchScreen}
+        component={SearchLevelOneStack}
         options={{
           title: "Search",
           headerTintColor: "#cecece",
