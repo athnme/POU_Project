@@ -43,6 +43,10 @@ export function LikeIcon_Active() {
   return <IconDefault source={require("../assets/Like_Active.svg")} />;
 }
 
+export function LikeLikedIcon() {
+  return <IconDefault source={require("../assets/Like_Liked.svg")} />;
+}
+
 export function IndicatorIcon() {
   return <IconDefault source={require("../assets/Location_Indicator.svg")} />;
 }
