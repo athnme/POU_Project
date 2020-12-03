@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components/native";
 
 // Styles
@@ -11,26 +10,14 @@ const XL = styled.Image`
   border: solid 2px #cecece;
 `;
 
-const XL_Active = styled(XL)`
-  border-color: #33d17c;
-`;
-
 const L = styled(XL)`
   width: 64px;
   height: 64px;
 `;
 
-const L_Active = styled(L)`
-  border-color: #33d17c;
-`;
-
 const M = styled(XL)`
   width: 48px;
   height: 48px;
-`;
-
-const M_Active = styled(M)`
-  border-color: #33d17c;
 `;
 
 const S = styled(XL)`
@@ -48,27 +35,15 @@ export function ProfilePicXL() {
   return <XL source={require("../assets/Profile_Pic.jpg")} />;
 }
 
-export function ProfilePicXL_Active() {
-  return <XL_Active source={require("../assets/Profile_Pic.jpg")} />;
-}
-
 export function ProfilePicL() {
   return <L source={require("../assets/Profile_Pic.jpg")} />;
-}
-
-export function ProfilePicL_Active() {
-  return <L_Active source={require("../assets/Profile_Pic.jpg")} />;
 }
 
 export function ProfilePicM() {
   return <M source={require("../assets/Profile_Pic.jpg")} />;
 }
 
-export function ProfilePicM_Active() {
-  return <M_Active source={require("../assets/Profile_Pic.jpg")} />;
-}
-
-export function ProfilePicS() {
+export function ProfilePicS(props) {
   return <S source={require("../assets/Profile_Pic.jpg")} />;
 }
 
