@@ -1,14 +1,15 @@
 import React from "react";
-import { Text } from "react-native";
 import styled from "styled-components/native";
 
-import { ProfilePicL, ProfilePicS } from "../../ProfilePics";
-import { IndicatorIcon } from "../../Icons";
-
-import { OptionsButton, LikeButton } from "../../Buttons";
+import { LikeIcon, IndicatorIcon, OptionsIcon } from "../../Icons";
+import { HeaderSix, HeaderFive, HeaderFour } from "../../Styles/Typography";
+import { BtnIcon } from "../../Styles/ButtonStyles";
+import { ProfilePicL, ProfilePicS } from "../../Styles/ProfilePicStyles";
 
 const PointContainer = styled.View`
   padding: 12px 16px;
+  width: 100%;
+  max-width: 414px;
 `;
 
 const Point = styled.View`
@@ -28,7 +29,8 @@ const PointImage = styled.Image`
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   width: 100%;
-  height: 320px;
+  height: calc(100vw - 64px);
+  max-height: 280px;
   object-fit: cover;
 `;
 
@@ -37,17 +39,9 @@ const PointInfo = styled.View`
   gap: 16px;
 `;
 
-const PointTitle = styled.Text`
-  color: #cecece;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.25;
-`;
-
 const PointInteractionContainer = styled.View`
   flex-direction: row;
   gap: 16px;
-  align-items: center;
   justify-content: space-between;
 `;
 
@@ -61,6 +55,11 @@ const LikersContainer = styled.View`
 const LikersPicsContainer = styled.View`
   flex-direction: row;
   padding-left: 12px;
+`;
+
+const LikersInfoContainer = styled.View`
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 const LikerPic = styled.View`
@@ -90,60 +89,64 @@ const LocationInfoContainer = styled.View`
 `;
 
 const LocationTextContainer = styled.View`
-  transform: rotate(180deg);
-`;
-
-const LocationText = styled.Text`
-  text-align: right;
   writing-mode: vertical-rl;
-  color: #cecece;
+  transform: rotate(180deg);
+  flex-direction: row;
+  text-align: right;
 `;
 
-const LocationTextBold = styled(LocationText)`
-  font-weight: 700;
+const LikerImg = styled(ProfilePicS)`
+  border-color: #042f2c;
 `;
 
-export default function Post() {
+export default function Post(props) {
   return (
     <PointContainer>
       <Point>
         <PointCard>
-          <PointImage source={require("../../../assets/postpic/postpic.jpg")} />
+          <PointImage source={props.postImgSrc} />
           <PointInfo>
-            <PointTitle>
-              OMG Guys, I found an awesome cocktail bar in cologne! 🥂😍
-            </PointTitle>
+            <HeaderFour>{props.caption} </HeaderFour>
             <PointInteractionContainer>
               <LikersContainer>
                 <LikersPicsContainer>
                   <LikerPic>
-                    <ProfilePicS />
+                    <LikerImg source={props.likerImg1} />
                   </LikerPic>
                   <LikerPic>
-                    <ProfilePicS />
+                    <LikerImg source={props.likerImg2} />
                   </LikerPic>
                   <LikerPic>
-                    <ProfilePicS />
+                    <LikerImg source={props.likerImg3} />
                   </LikerPic>
                 </LikersPicsContainer>
-                <Text>Hello</Text>
+                <LikersInfoContainer>
+                  <HeaderFive>{props.firstLiker} </HeaderFive>
+                  <HeaderSix>
+                    and {props.likerNumber} others liked this
+                  </HeaderSix>
+                </LikersInfoContainer>
               </LikersContainer>
-              <LikeButton />
+              <BtnIcon>
+                <LikeIcon />
+              </BtnIcon>
             </PointInteractionContainer>
           </PointInfo>
         </PointCard>
         <UserPicContainer>
-          <ProfilePicL />
+          <ProfilePicL source={props.userImg} />
         </UserPicContainer>
         <UserNameOptionsContainer>
-          <Text>Hello</Text>
-          <OptionsButton />
+          <HeaderFive>{props.userName}</HeaderFive>
+          <BtnIcon>
+            <OptionsIcon />
+          </BtnIcon>
         </UserNameOptionsContainer>
         <LocationInfoContainer>
           <IndicatorIcon />
           <LocationTextContainer>
-            <LocationTextBold>HELLO </LocationTextBold>
-            <LocationText>HELLO</LocationText>
+            <HeaderFive>{props.locationName}</HeaderFive>
+            <HeaderSix> | {props.location}</HeaderSix>
           </LocationTextContainer>
         </LocationInfoContainer>
       </Point>
