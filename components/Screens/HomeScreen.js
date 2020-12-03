@@ -1,15 +1,13 @@
 import React from "react";
-
 import styled from "styled-components/native";
+
+import Post from "../cards/posts/Point";
 
 const DefaultScreen = styled.View`
   flex: 1;
   background-color: #07211f;
   background-image: linear-gradient(180deg, #07211f 3.28%, #030d12 96.74%);
   color: #cecece;
-
-  align-items: center;
-  justify-content: center;
 `;
 
 const DefaultText = styled.Text`
@@ -25,9 +23,7 @@ const HeaderTwo = styled(DefaultText)`
 export default function HomeScreen({ navigation }) {
   return (
     <DefaultScreen>
-      <Button title="Search" onPress={() => navigation.navigate("Search")} />
-
-      <HeaderTwo>Home</HeaderTwo>
+      <Post />
     </DefaultScreen>
   );
 }

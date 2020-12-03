@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Wordmark } from "../Icons";
 import { AddButton } from "../Buttons";
 import HomeScreen from "../Screens/HomeScreen";
-import SearchStack from "../Screens/SearchScreen";
+import SearchStack from "./SearchStack";
 
 const Stack = createStackNavigator();
 

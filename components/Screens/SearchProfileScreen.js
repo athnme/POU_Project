@@ -22,10 +22,10 @@ const HeaderTwo = styled(DefaultText)`
   letter-spacing: 0.25px;
 `;
 
-export default function LikedScreen() {
+export default function SearchProfileScreen() {
   return (
     <DefaultScreen>
-      <HeaderTwo>Liked Points</HeaderTwo>
+      <HeaderTwo>Search Profiles</HeaderTwo>
     </DefaultScreen>
   );
 }
