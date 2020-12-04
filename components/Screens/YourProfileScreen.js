@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/native";
 
-import PostSmall from "../cards/posts/PostSmall";
+import PostSmall from "../cards/PostSmall";
 
 const DefaultScreen = styled.View`
   flex: 1;
