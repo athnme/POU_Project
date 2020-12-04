@@ -1,35 +1,29 @@
 import React from "react";
 import styled from "styled-components/native";
 
-import PostSmall from "../cards/posts/PostSmall";
+import PostSmall from "../cards/PostSmall";
 
 const DefaultScreen = styled.View`
   flex: 1;
   background-color: #07211f;
   background-image: linear-gradient(180deg, #07211f 3.28%, #030d12 96.74%);
   color: #cecece;
-
   align-items: center;
-  justify-content: center;
 `;
 
-const DefaultText = styled.Text`
-  color: inherit;
-`;
-
-const SmallPosts = styled.View`
+const List = styled.View`
   width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 16px;
   gap: 8px;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
 `;
 
 export default function YourProfileScreen() {
   return (
     <DefaultScreen>
-      <SmallPosts>
+      <List>
         <PostSmall
           userName="Ms. Sparkles"
           userImg="https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjgyfHxwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
@@ -43,7 +37,7 @@ export default function YourProfileScreen() {
           likerImg2="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=592&q=80"
           likerImg3="https://images.unsplash.com/photo-1506468203959-a06c860af8f0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
         />
-      </SmallPosts>
+      </List>
     </DefaultScreen>
   );
 }
