@@ -10,18 +10,11 @@ const DefaultScreen = styled.View`
   color: #cecece;
   padding: 16px;
   align-items: center;
-  justify-content: center;
+  gap: 16px;
 `;
 
 const DefaultText = styled.Text`
   color: inherit;
-`;
-
-const HeaderTwo = styled(DefaultText)`
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: 0.25px;
 `;
 
 export default function SearchProfileScreen() {
