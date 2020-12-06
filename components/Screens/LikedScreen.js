@@ -1,16 +1,8 @@
 import React, { useState } from "react";
-import { FlatList } from "react-native-gesture-handler";
-import styled from "styled-components/native";
+import { FlatList, StyleSheet } from "react-native";
 
 import Post from "../cards/Post";
-
-const DefaultScreen = styled.View`
-  flex: 1;
-  background-color: #07211f;
-  background-image: linear-gradient(180deg, #07211f 3.28%, #030d12 96.74%);
-  align-items: center;
-  padding: 0 16px;
-`;
+import { DefaultContainer } from "../Styles/ContainerStyles";
 
 export default function LikedScreen() {
   const [post, setPost] = useState([
@@ -60,7 +52,7 @@ export default function LikedScreen() {
       caption:
         "Man, I love unwinding at this place and watching the cows do their thing. 😌",
       location: "Cologne",
-      locationName: "Seiberts",
+      locationName: "Bauernhof",
       firstLiker: "Benham",
       likerNumber: "23",
       postImgSrc:
@@ -79,7 +71,7 @@ export default function LikedScreen() {
         "https://images.unsplash.com/photo-1492567291473-fe3dfc175b45?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80",
       caption: "AHHHH YESS! Come to Papa! 😋🤤😋🤤😋🤤😋🤤😋🤤😋🤤",
       location: "Cologne",
-      locationName: "Seiberts",
+      locationName: "Pure White",
       firstLiker: "Benham",
       likerNumber: "23",
       postImgSrc:
@@ -94,8 +86,9 @@ export default function LikedScreen() {
   ]);
 
   return (
-    <DefaultScreen>
+    <DefaultContainer>
       <FlatList
+        contentContainerStyle={styles.listContainer}
         data={post}
         renderItem={({ item }) => (
           <Post
@@ -113,6 +106,16 @@ export default function LikedScreen() {
           />
         )}
       />
-    </DefaultScreen>
+    </DefaultContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  listContainer: {
+    gap: 24,
+    paddingVertical: 16,
+    justifyContent: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+});

@@ -7,7 +7,6 @@ import { BtnIcon } from "../Styles/ButtonStyles";
 import { CloseIcon } from "../Icons";
 
 const CardContainer = styled.View`
-  width: 100%;
   background-color: #042f2c;
   padding: 16px;
   border-radius: 16px;
