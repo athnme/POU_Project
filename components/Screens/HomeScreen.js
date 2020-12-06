@@ -4,6 +4,7 @@ import { FlatList, StyleSheet } from "react-native";
 import Post from "../cards/Post";
 import { DefaultContainer } from "../Styles/ContainerStyles";
 
+
 export default function HomeScreen() {
   const [post, setPost] = useState([
     {
