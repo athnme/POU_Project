@@ -9,7 +9,7 @@ const Tab = createMaterialTopTabNavigator();
 export default function App() {
   return (
     <Tab.Navigator
-      initialRouteName="Locations"
+      initialRouteName="Profiles"
       tabBarOptions={{
         activeTintColor: "#33D17C",
         inactiveTintColor: "#cecece",

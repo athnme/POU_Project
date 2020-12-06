@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { View, Text } from "react-native";
+
 import styled from "styled-components/native";
 
 import SearchLocationCard from "../cards/SearchLocationCard";
+import { TextField } from "../Styles/TextFieldStyles";
 
 const DefaultScreen = styled.View`
   flex: 1;
@@ -21,8 +24,17 @@ const List = styled.View`
 `;
 
 export default function SearchLocationScreen() {
+  const [userName, setUserName] = useState("Atahan");
+
   return (
     <DefaultScreen>
+      <Text>My Name is {userName}</Text>
+      <View>
+        <TextField
+          placeholder="Search"
+          onChangeText={(value) => setUserName(value)}
+        />
+      </View>
       <List>
         <SearchLocationCard
           userName="Ms. Sparkles"
