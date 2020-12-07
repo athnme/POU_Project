@@ -19,19 +19,18 @@ import { ProfilePicS } from "./ProfilePics";
 
 // Styles
 
-const BtnDefault = styled.TouchableOpacity`
+export const BtnDefault = styled.TouchableOpacity`
   padding: 6px 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  width: 100%;
   height: 40px;
   border: solid 2px #cecece;
   color: #cecece;
 `;
 
-const BtnCta = styled(BtnDefault)`
+export const BtnCta = styled(BtnDefault)`
   border: none;
   color: #07211f;
   background: #33d17c;

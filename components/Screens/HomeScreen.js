@@ -7,7 +7,7 @@ import { DefaultContainer } from "../Styles/ContainerStyles";
 export default function HomeScreen() {
   const [post, setPost] = useState([
     {
-      key: "1",
+      key: "01",
       userName: "BurgerBurglar",
       userImg:
         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
@@ -26,7 +26,7 @@ export default function HomeScreen() {
         "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
-      key: "2",
+      key: "02",
       userName: "Ms. Sparkles",
       userImg:
         "https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjgyfHxwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
