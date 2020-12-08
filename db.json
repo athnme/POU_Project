@@ -1,0 +1,36 @@
+{
+  "profiles": [
+    {
+      "id": "aaa001",
+      "userName": "Ms. Sparkles",
+      "wholeName": "Tanya Brown",
+      "userImg": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      "email": "a.oezbanazi@gmail.com",
+      "passWord": "password123",
+      "message": "This is my profile message!",
+      "posts": [
+        {
+          "postId": "001",
+          "coordinates": "50.93892363027569, 6.940656269549393",
+          "postImgSrc": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+          "caption": "At last a worthy cocktail bar for a cocktail afficianado such as me!",
+          "locationName": "Seiberts"
+        },
+        {
+          "postId": "002",
+          "coordinates": "50.93892363027569, 6.940656269549393",
+          "postImgSrc": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+          "caption": "At last a worthy cocktail bar for a cocktail afficianado such as me!",
+          "locationName": "Seiberts"
+        },
+        {
+          "postId": "003",
+          "coordinates": "50.93892363027569, 6.940656269549393",
+          "postImgSrc": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+          "caption": "At last a worthy cocktail bar for a cocktail afficianado such as me!",
+          "locationName": "Seiberts"
+        }
+      ]
+    }
+  ]
+}
