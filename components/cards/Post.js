@@ -7,9 +7,7 @@ import { BtnIcon } from "../Styles/ButtonStyles";
 import { ProfilePicL, ProfilePicS } from "../Styles/ProfilePicStyles";
 
 const PointContainer = styled.View`
-  padding: 12px 16px;
-  width: 100%;
-  max-width: 414px;
+  width: clamp(248px, calc(100vw - 32px), 382px);
 `;
 
 const Point = styled.View`

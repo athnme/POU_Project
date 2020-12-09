@@ -4,8 +4,7 @@ import styled from "styled-components/native";
 import { HeaderThree } from "../Styles/Typography";
 
 const CardContainer = styled.View`
-  width: calc(50% - 4px);
-  max-width: 182px;
+  width: clamp(120px, calc(50vw - 24px), 182px)
   height: 182px;
   border-radius: 16px;
   display: grid;
