@@ -1,23 +1,8 @@
 import React, { useState } from "react";
-import styled from "styled-components/native";
+import { StyleSheet, FlatList } from "react-native";
 
 import { DefaultContainer } from "../Styles/ContainerStyles";
 import SearchProfileCard from "../cards/SearchProfileCard";
-
-const SearchList = styled.FlatList`
-  padding: 16px 0;
-  width: 100%;
-  max-width: 1024px;
-`;
-
-const Seperator = styled.View`
-  height: 8px;
-  width: 8px;
-`;
-
-function listSeperator() {
-  return <Seperator />;
-}
 
 export default function SearchProfileScreen() {
   const [search, setSearch] = useState([
@@ -66,8 +51,8 @@ export default function SearchProfileScreen() {
 
   return (
     <DefaultContainer>
-      <SearchList
-        ItemSeparatorComponent={listSeperator}
+      <FlatList
+        contentContainerStyle={styles.listContainer}
         data={search}
         renderItem={({ item }) => (
           <SearchProfileCard
@@ -80,3 +65,10 @@ export default function SearchProfileScreen() {
     </DefaultContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  listContainer: {
+    gap: 8,
+    paddingVertical: 8,
+  },
+});

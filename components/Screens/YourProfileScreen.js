@@ -57,8 +57,8 @@ export default function YourProfileScreen() {
       <FlatList
         numColumns={60}
         columnWrapperStyle={styles.columnStyle}
-        ListHeaderComponent={listHeader}
         contentContainerStyle={styles.listContainer}
+        ListHeaderComponent={listHeader}
         data={pageData.posts}
         renderItem={({ item }) => <PostSmall postImgSrc={item.postImg} />}
       />

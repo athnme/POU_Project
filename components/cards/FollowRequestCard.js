@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import styled from "styled-components/native";
 
 import { HeaderSix, HeaderFive } from "../Styles/Typography";
@@ -11,26 +11,31 @@ const CardContainer = styled.View`
   background-color: #042f2c;
   padding: 16px;
   border-radius: 16px;
-  gap: 16px;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 64px;
+  row-gap: 16px;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 16px;
 `;
 
 const UserInfoContainer = styled.View`
-  gap: 16px;
-  align-items: center;
   flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-grow: 1;
 `;
 
-const NameContainer = styled.View`
-  flex-direction: row;
-`;
+const NameContainer = styled.View``;
 
 const ButtonsContainer = styled.View`
   flex-direction: row;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-grow: 1;
+  justify-content: flex-end;
 `;
 
 export default function SearchProfileCard(props) {
@@ -39,18 +44,24 @@ export default function SearchProfileCard(props) {
       <UserInfoContainer>
         <ProfilePicM source={props.userImg} />
         <NameContainer>
-          <HeaderFive>{props.userName}</HeaderFive>
-          <HeaderSix> wants to follow you</HeaderSix>
+          <HeaderFive>{props.userName} </HeaderFive>
+          <HeaderSix>wants to follow you</HeaderSix>
         </NameContainer>
       </UserInfoContainer>
       <ButtonsContainer>
-        <BtnCta>
+        <BtnCta style={styles.btnGrow}>
           <BtnTextCta>accept</BtnTextCta>
         </BtnCta>
-        <BtnDefault>
+        <BtnDefault style={styles.btnGrow}>
           <BtnTextDefault>decline</BtnTextDefault>
         </BtnDefault>
       </ButtonsContainer>
     </CardContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  btnGrow: {
+    flexGrow: 1,
+  },
+});

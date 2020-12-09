@@ -5,7 +5,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "api": "json-server --watch db.json --port 5000"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
@@ -16,6 +17,7 @@
     "@react-navigation/stack": "^5.12.8",
     "expo": "~39.0.2",
     "expo-status-bar": "~1.0.2",
+    "json-server": "^0.16.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",

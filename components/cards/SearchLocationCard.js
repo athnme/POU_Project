@@ -4,9 +4,8 @@ import styled from "styled-components/native";
 import { HeaderThree } from "../Styles/Typography";
 
 const CardContainer = styled.View`
-  width: clamp(120px, calc(50vw - 24px), 182px)
-  height: 182px;
-  border-radius: 16px;
+  width: clamp(120px, calc(50vw - 20px), 187px);
+  height: clamp(120px, calc(50vw - 20px), 187px);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;

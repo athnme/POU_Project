@@ -49,7 +49,9 @@ export default function LikedScreen() {
   return (
     <DefaultContainer>
       <FlatList
+        numColumns={60}
         contentContainerStyle={styles.listContainer}
+        columnWrapperStyle={styles.columnStyle}
         data={post}
         renderItem={({ item }) => (
           <Post
@@ -73,10 +75,11 @@ export default function LikedScreen() {
 
 const styles = StyleSheet.create({
   listContainer: {
+    paddingVertical: 8,
+  },
+  columnStyle: {
     gap: 24,
-    paddingVertical: 16,
     justifyContent: "center",
-    flexDirection: "row",
     flexWrap: "wrap",
   },
 });

@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
-import styled from "styled-components/native";
 
 import { DefaultContainer } from "../Styles/ContainerStyles";
 import SearchLocationCard from "../cards/SearchLocationCard";
-
-const SearchList = styled.FlatList`
-  padding: 16px 0;
-  width: 100%;
-`;
+import { FlatList } from "react-native-gesture-handler";
 
 export default function SearchLocationScreen() {
   const [search, setSearch] = useState([
@@ -28,7 +23,9 @@ export default function SearchLocationScreen() {
 
   return (
     <DefaultContainer>
-      <SearchList
+      <FlatList
+        numColumns={60}
+        columnWrapperStyle={styles.columnStyle}
         contentContainerStyle={styles.listContainer}
         data={search}
         renderItem={({ item }) => (
@@ -44,10 +41,12 @@ export default function SearchLocationScreen() {
 
 const styles = StyleSheet.create({
   listContainer: {
-    gap: 16,
+    gap: 8,
+    paddingVertical: 8,
+  },
+  columnStyle: {
+    gap: 8,
     justifyContent: "center",
-    flexDirection: "row",
     flexWrap: "wrap",
-    width: "100%",
   },
 });
