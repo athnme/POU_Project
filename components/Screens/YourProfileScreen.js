@@ -6,7 +6,7 @@ import ProfileInfoCard from "../cards/ProfileInfoCard";
 import PostSmall from "../cards/PostSmall";
 
 const getUser = async () => {
-  let uri = `http://localhost:5001/users/2?_embed=posts`;
+  let uri = `http://localhost:5000/users/2?_embed=posts`;
 
   const response = await fetch(uri);
   const user = await response.json();
