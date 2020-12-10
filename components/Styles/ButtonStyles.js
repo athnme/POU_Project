@@ -6,10 +6,11 @@ export const BtnDefault = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  width: 100%;
   height: 40px;
   border: solid 2px #cecece;
   color: #cecece;
+  justify-self: stretch;
+  min-width: 100px;
 `;
 
 export const BtnCta = styled(BtnDefault)`

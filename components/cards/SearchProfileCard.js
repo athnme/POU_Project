@@ -8,6 +8,7 @@ import { CloseIcon } from "../Icons";
 
 const CardContainer = styled.View`
   background-color: #042f2c;
+  width: clamp(120px, calc(100vw - 32px), 1024px);
   padding: 16px;
   border-radius: 16px;
   flex-direction: row;

@@ -36,3 +36,9 @@ export const HeaderTwo = styled(ParagraphDefault)`
 export const HeaderOne = styled(HeaderTwo)`
   font-weight: bold;
 `;
+
+export const BtnTextDefault = styled(HeaderSix)``;
+
+export const BtnTextCta = styled(BtnTextDefault)`
+  color: #07211f;
+`;

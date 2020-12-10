@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components/native";
 
 const PointContainer = styled.View`
-  width: calc(50% - 4px);
-  max-width: 182px;
-  height: 182px;
+  width: clamp(120px, calc(50vw - 20px), 187px);
+  height: clamp(120px, calc(50vw - 20px), 187px);
 `;
 
 const PointImage = styled.Image`

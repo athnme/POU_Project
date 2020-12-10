@@ -29,7 +29,7 @@ export default function BottomNav() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Search"
+        initialRouteName="Your Profile"
         activeColor="#33D17C"
         inactiveColor="#cecece"
         shifting="true"

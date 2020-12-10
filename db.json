@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Athn",
+      "wholeName": "Atahan Özbanazi",
+      "userImg": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzB8fHBvcnRyYWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "message": "I created this app!",
+      "email": "atahan@gmail.com",
+      "passWord": "password123"
+    },
+    {
+      "id": 2,
+      "userName": "Mr. Sparkles",
+      "wholeName": "Tanya Brown",
+      "userImg": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      "message": "This is my profile message!",
+      "email": "tanya@gmail.com",
+      "passWord": "password123"
+    },
+    {
+      "id": 3,
+      "userName": "LadyK",
+      "wholeName": "Karen Jackson",
+      "userImg": "https://images.unsplash.com/photo-1518157542428-1be9739022f4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTd8fHBvcnRyYWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "message": "Is this thing on?",
+      "email": "karen@gmail.com",
+      "passWord": "password123"
+    },
+    {
+      "id": 4,
+      "userName": "DatFrogCurtis",
+      "wholeName": "Curtis Banner",
+      "userImg": "https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjQ0fHxwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "message": "heyooo!!!",
+      "email": "curtis@gmail.com",
+      "passWord": "password123"
+    },
+    {
+      "id": 5,
+      "userName": "fritz_lakritz",
+      "wholeName": "Jonas Schlösser",
+      "userImg": "https://images.unsplash.com/photo-1524492926121-4723520d78d9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTIyfHxwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "message": "This is my profile message!",
+      "email": "jonas@gmail.com",
+      "passWord": "password123"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 3,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "Found this fancy bar in cologne. These guys make the best MaiTais ever 😍",
+      "location": "Seiberts",
+      "liker": { "userId": [2, 1, 5] }
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1525268323446-0505b6fe7778?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "I'm getting wasted at this awesome bar right now.",
+      "location": "Monkey Bar",
+      "likerId": [5, 4]
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1437418747212-8d9709afab22?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJhcnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "caption": "Since everyone is posting bar points, I might as well do too 😁",
+      "location": "Some Random Bar",
+      "likerId": [1, 2, 3]
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1503876466-1fc5143eda57?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGJhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "Oh, I'm definetly going to take this thing home. 😝",
+      "location": "One Night Club",
+      "likerId": [3, 2, 5]
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1516352254823-8fce5b3d7ec2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGJhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "OOOOHHH Fancy 😍😍😍",
+      "location": "Soul Bar",
+      "likerId": [5]
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "Holy crap, u guys have to check this place out!!! 🤩🤩🤩🤩🤩🤩🤩",
+      "location": "Momotaro",
+      "likerId": [1, 5]
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "Post 7",
+      "location": "Royal Iberico",
+      "likerId": [2, 1, 5]
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "Post 8",
+      "location": "Die Kunstbar",
+      "likerId": [2, 4]
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1555992336-03a23c7b20ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzd8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "caption": "Post 9",
+      "location": "Low Budget",
+      "likerId": [1, 3, 4]
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "coordinates": "50.93892363027569, 6.940656269549393",
+      "postImg": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "caption": "Post 10",
+      "location": "Pure White",
+      "likerIds": [2, 4, 5]
+    }
+  ],
+  "likers": [
+    {
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "userId": 5
+    }
+  ]
+}

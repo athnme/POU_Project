@@ -1,43 +1,65 @@
-import React from "react";
-import styled from "styled-components/native";
+import React, { useEffect, useState } from "react";
+import { StyleSheet, FlatList } from "react-native";
 
+import { DefaultContainer } from "../Styles/ContainerStyles";
+import ProfileInfoCard from "../cards/ProfileInfoCard";
 import PostSmall from "../cards/PostSmall";
 
-const DefaultScreen = styled.View`
-  flex: 1;
-  background-color: #07211f;
-  background-image: linear-gradient(180deg, #07211f 3.28%, #030d12 96.74%);
-  color: #cecece;
-  align-items: center;
-`;
+const getUser = async () => {
+  let uri = `http://localhost:5000/users/2?_embed=posts`;
 
-const List = styled.View`
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 16px;
-  gap: 8px;
-`;
+  const response = await fetch(uri);
+  const user = await response.json();
+  return user;
+};
 
-export default function YourProfileScreen() {
+function listHeader() {
+  if (!getUser) {
+    return null;
+  }
   return (
-    <DefaultScreen>
-      <List>
-        <PostSmall
-          userName="Ms. Sparkles"
-          userImg="https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjgyfHxwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          caption="OMG Guys, I found an awesome cocktail bar in cologne! 🥂😍"
-          location="Cologne"
-          locationName="Seiberts"
-          firstLiker="Benham"
-          likerNumber="23"
-          postImgSrc="https://images.unsplash.com/photo-1606940077503-8cd3365e5cdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
-          likerImg1="https://images.unsplash.com/photo-1502980426475-b83966705988?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTZ8fHBvcnRyYWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          likerImg2="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=592&q=80"
-          likerImg3="https://images.unsplash.com/photo-1506468203959-a06c860af8f0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
-        />
-      </List>
-    </DefaultScreen>
+    <ProfileInfoCard
+      wholeName={getUser.wholeName}
+      userImg={getUser.userImg}
+      message={getUser.message}
+      pointCount={getUser.posts.length}
+      followerCount="5"
+      followingCount="10"
+    />
   );
 }
+
+export default function YourProfileScreen() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    getUser().then((user) => setUser(user));
+  }, []);
+  if (!user) {
+    return <DefaultContainer />;
+  }
+
+  return (
+    <DefaultContainer>
+      <FlatList
+        numColumns={60}
+        columnWrapperStyle={styles.columnStyle}
+        contentContainerStyle={styles.listContainer}
+        ListHeaderComponent={listHeader}
+        data={user.posts}
+        renderItem={({ item }) => <PostSmall postImgSrc={item.postImg} />}
+      />
+    </DefaultContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  listContainer: {
+    gap: 8,
+    paddingVertical: 8,
+  },
+  columnStyle: {
+    gap: 8,
+    justifyContent: "center",
+    flexWrap: "wrap",
+  },
+});
