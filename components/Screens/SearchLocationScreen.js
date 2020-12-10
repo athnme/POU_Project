@@ -5,6 +5,7 @@ import { DefaultContainer } from "../Styles/ContainerStyles";
 import SearchLocationCard from "../cards/SearchLocationCard";
 import { FlatList } from "react-native-gesture-handler";
 
+
 export default function SearchLocationScreen() {
   const [search, setSearch] = useState([
     {
