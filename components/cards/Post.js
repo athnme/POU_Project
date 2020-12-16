@@ -1,4 +1,6 @@
 import React from "react";
+import { TouchableOpacity } from "react-native";
+
 import styled from "styled-components/native";
 
 import { LikeIcon, IndicatorIcon, OptionsIcon } from "../Icons";
@@ -16,7 +18,7 @@ const Point = styled.View`
   grid-template-rows: 32px 32px 1fr;
 `;
 
-const PointCard = styled.View`
+const PointCard = styled.TouchableOpacity`
   border-radius: 16px;
   background-color: #042f2c;
   grid-column: 2 / 4;
@@ -64,7 +66,7 @@ const LikerPic = styled.View`
   margin-left: -12px;
 `;
 
-const UserPicContainer = styled.View`
+const UserPicContainer = styled.TouchableOpacity`
   grid-column: 1 / 3;
   grid-row: 1 / 3;
 `;
@@ -78,7 +80,7 @@ const UserNameOptionsContainer = styled.View`
   padding-left: 16px;
 `;
 
-const LocationInfoContainer = styled.View`
+const LocationInfoContainer = styled.TouchableOpacity`
   grid-column: 1;
   grid-row: 3/4;
   padding-top: 16px;
@@ -101,7 +103,7 @@ export default function Post(props) {
   return (
     <PointContainer>
       <Point>
-        <PointCard>
+        <PointCard onPress={props.postScreen}>
           <PointImage source={props.postImgSrc} />
           <PointInfo>
             <HeaderFour>{props.caption} </HeaderFour>
@@ -125,26 +127,28 @@ export default function Post(props) {
                   </HeaderSix>
                 </LikersInfoContainer>
               </LikersContainer>
-              <BtnIcon>
+              <BtnIcon onPress={props.postScreen}>
                 <LikeIcon />
               </BtnIcon>
             </PointInteractionContainer>
           </PointInfo>
         </PointCard>
-        <UserPicContainer>
+        <UserPicContainer onPress={props.profileScreen}>
           <ProfilePicL source={props.userImg} />
         </UserPicContainer>
         <UserNameOptionsContainer>
-          <HeaderFive>{props.userName}</HeaderFive>
-          <BtnIcon>
+          <TouchableOpacity onPress={props.profileScreen}>
+            <HeaderFive>{props.userName}</HeaderFive>
+          </TouchableOpacity>
+          <BtnIcon onPress={props.onPress}>
             <OptionsIcon />
           </BtnIcon>
         </UserNameOptionsContainer>
-        <LocationInfoContainer>
+        <LocationInfoContainer onPress={props.postScreen}>
           <IndicatorIcon />
           <LocationTextContainer>
             <HeaderFive>{props.locationName}</HeaderFive>
-            <HeaderSix> | {props.location}</HeaderSix>
+            <HeaderSix>{props.location}</HeaderSix>
           </LocationTextContainer>
         </LocationInfoContainer>
       </Point>

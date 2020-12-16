@@ -13,21 +13,6 @@ const getUser = async () => {
   return user;
 };
 
-function listHeader() {
-  if (!getUser) {
-    return null;
-  }
-  return (
-    <ProfileInfoCard
-      wholeName={getUser.wholeName}
-      userImg={getUser.userImg}
-      message={getUser.message}
-      pointCount={getUser.posts.length}
-      followerCount="5"
-      followingCount="10"
-    />
-  );
-}
 
 export default function YourProfileScreen() {
   const [user, setUser] = useState(null);
@@ -44,7 +29,17 @@ export default function YourProfileScreen() {
         numColumns={60}
         columnWrapperStyle={styles.columnStyle}
         contentContainerStyle={styles.listContainer}
-        ListHeaderComponent={listHeader}
+        ListHeaderComponent={
+          <ProfileInfoCard
+            wholeName={user.wholeName}
+            userImg={user.userImg}
+            message={user.message}
+            pointCount={user.posts.length}
+            followerCount={user.posts.length}
+            followingCount={user.posts.length}
+          />
+        }
+
         data={user.posts}
         renderItem={({ item }) => <PostSmall postImgSrc={item.postImg} />}
       />
