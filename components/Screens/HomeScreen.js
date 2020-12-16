@@ -13,6 +13,7 @@ const getPosts = async () => {
 };
 
 export default function HomeScreen({ navigation }) {
+
   const [posts, setPosts] = useState(null);
   useEffect(() => {
     getPosts().then((posts) => setPosts(posts));

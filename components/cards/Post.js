@@ -1,5 +1,6 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
+
 import styled from "styled-components/native";
 
 import { LikeIcon, IndicatorIcon, OptionsIcon } from "../Icons";

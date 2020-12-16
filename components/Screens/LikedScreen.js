@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { FlatList, StyleSheet } from "react-native";
 
 import Post from "../cards/Post";
@@ -20,6 +21,7 @@ export default function LikedScreen() {
   if (!posts) {
     return <DefaultContainer />;
   }
+
   return (
     <DefaultContainer>
       <FlatList

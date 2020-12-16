@@ -13,6 +13,7 @@ const getUser = async () => {
   return user;
 };
 
+
 export default function YourProfileScreen() {
   const [user, setUser] = useState(null);
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function YourProfileScreen() {
             followingCount={user.posts.length}
           />
         }
+
         data={user.posts}
         renderItem={({ item }) => <PostSmall postImgSrc={item.postImg} />}
       />

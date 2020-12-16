@@ -22,6 +22,7 @@ export default function SearchLocationScreen() {
     return <DefaultContainer />;
   }
 
+
   return (
     <DefaultContainer>
       <FlatList

@@ -20,7 +20,6 @@ export default function SearchProfileScreen() {
   if (!users) {
     return <DefaultContainer />;
   }
-
   return (
     <DefaultContainer>
       <FlatList
