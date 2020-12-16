@@ -12,7 +12,7 @@ export const ParagraphBold = styled(ParagraphDefault)`
 
 export const HeaderSix = styled(ParagraphDefault)`
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
 `;
 
 export const HeaderFive = styled(HeaderSix)`

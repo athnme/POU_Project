@@ -12,7 +12,7 @@ const getPosts = async () => {
   return posts;
 };
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   const [posts, setPosts] = useState(null);
   useEffect(() => {
     getPosts().then((posts) => setPosts(posts));
@@ -29,6 +29,11 @@ export default function HomeScreen() {
         data={posts}
         renderItem={({ item }) => (
           <Post
+            postScreen={() => navigation.navigate("Post", { id: item.id })}
+            profileScreen={() =>
+              navigation.navigate("Profile", { id: item.user.id })
+            }
+            postPath={item.id}
             userName={item.user.userName}
             userImg={item.user.userImg}
             postImgSrc={item.postImg}

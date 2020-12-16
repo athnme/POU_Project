@@ -53,8 +53,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "Found this fancy bar in cologne. These guys make the best MaiTais ever 😍",
-      "location": "Seiberts",
-      "liker": { "userId": [2, 1, 5] }
+      "location": "Seiberts"
     },
     {
       "id": 2,
@@ -62,8 +61,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1525268323446-0505b6fe7778?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "I'm getting wasted at this awesome bar right now.",
-      "location": "Monkey Bar",
-      "likerId": [5, 4]
+      "location": "Monkey Bar"
     },
     {
       "id": 3,
@@ -71,8 +69,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1437418747212-8d9709afab22?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJhcnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "caption": "Since everyone is posting bar points, I might as well do too 😁",
-      "location": "Some Random Bar",
-      "likerId": [1, 2, 3]
+      "location": "Some Random Bar"
     },
     {
       "id": 4,
@@ -80,8 +77,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1503876466-1fc5143eda57?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGJhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "Oh, I'm definetly going to take this thing home. 😝",
-      "location": "One Night Club",
-      "likerId": [3, 2, 5]
+      "location": "One Night Club"
     },
     {
       "id": 5,
@@ -89,8 +85,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1516352254823-8fce5b3d7ec2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGJhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "OOOOHHH Fancy 😍😍😍",
-      "location": "Soul Bar",
-      "likerId": [5]
+      "location": "Soul Bar"
     },
     {
       "id": 6,
@@ -98,8 +93,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "Holy crap, u guys have to check this place out!!! 🤩🤩🤩🤩🤩🤩🤩",
-      "location": "Momotaro",
-      "likerId": [1, 5]
+      "location": "Momotaro"
     },
     {
       "id": 7,
@@ -107,8 +101,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "Post 7",
-      "location": "Royal Iberico",
-      "likerId": [2, 1, 5]
+      "location": "Royal Iberico"
     },
     {
       "id": 8,
@@ -116,8 +109,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "Post 8",
-      "location": "Die Kunstbar",
-      "likerId": [2, 4]
+      "location": "Die Kunstbar"
     },
     {
       "id": 9,
@@ -125,8 +117,7 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1555992336-03a23c7b20ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzd8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "caption": "Post 9",
-      "location": "Low Budget",
-      "likerId": [1, 3, 4]
+      "location": "Low Budget"
     },
     {
       "id": 10,
@@ -134,30 +125,72 @@
       "coordinates": "50.93892363027569, 6.940656269549393",
       "postImg": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
       "caption": "Post 10",
-      "location": "Pure White",
-      "likerIds": [2, 4, 5]
+      "location": "Pure White"
     }
   ],
-  "likers": [
+
+  "cities": [
     {
       "id": 1,
-      "userId": 1
+      "name": "Berlin",
+      "img": "https://images.unsplash.com/photo-1560930950-5cc20e80e392?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmVybGlufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 2,
-      "userId": 2
+      "name": "Munich",
+      "img": "https://images.unsplash.com/photo-1561056731-62ffd605f586?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bXVuaWNofGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 3,
-      "userId": 3
+      "name": "Hamburg",
+      "img": "https://images.unsplash.com/photo-1552325476-80f5b4a310a3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFtYnVyZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 4,
-      "userId": 4
+      "name": "Frankfurt",
+      "img": "https://images.unsplash.com/photo-1540646794357-6cbbd6f3501e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZnJhbmtmdXJ0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 5,
-      "userId": 5
+      "name": "Cologne",
+      "img": "https://images.unsplash.com/photo-1606128474171-e8b7ab67ea41?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fGNvbG9nbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "postId": 2
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "postId": 4
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "postId": 6
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "postId": 7
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "postId": 8
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "postId": 1
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "postId": 8
     }
   ]
 }

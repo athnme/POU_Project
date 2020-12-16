@@ -125,6 +125,14 @@ export function OptionsButton() {
   );
 }
 
+export function HeaderOptionsButton() {
+  return (
+    <BtnIcon_Margin_Right>
+      <OptionsIcon />
+    </BtnIcon_Margin_Right>
+  );
+}
+
 export function AddButton() {
   return (
     <BtnIcon_Margin_Right>

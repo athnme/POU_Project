@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/native";
 
-const PointContainer = styled.View`
+const PointContainer = styled.TouchableOpacity`
   width: clamp(120px, calc(50vw - 20px), 187px);
   height: clamp(120px, calc(50vw - 20px), 187px);
 `;
@@ -14,7 +14,7 @@ const PointImage = styled.Image`
 
 export default function PostSmall(props) {
   return (
-    <PointContainer>
+    <PointContainer onPress={props.postScreen}>
       <PointImage source={props.postImgSrc} />
     </PointContainer>
   );
